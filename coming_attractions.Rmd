@@ -160,7 +160,7 @@ housing prices?  Can you calculate this?
 Enter the expression below
 
 ```{R}
-
+median(Boston_assessment_df$BLDG_VALUE_NUMERIC)
 ```
 
 #How about the maximum value
