@@ -166,6 +166,7 @@ Enter some code to figure out what is in list_c and what type it is.
 Is there one function that will do this for you?
 
 ```{R}
+str(list_c)
 
 ```
 
@@ -218,7 +219,7 @@ Action required
 Write code below to extract the 3rd item in list b
 
 ```{R}
-
+list_b[3]
 ```
 
 We can extract several items at once
@@ -281,7 +282,7 @@ any((list_a==9))
  Find a condition that gives you a TRUE and another one that gives you a false
  
 ```{R}
-
+all(list_b)
 ```
 
 Use the help function to look up the which() function
@@ -291,7 +292,7 @@ What does it do?
 Try using it and a test condition on list_a
 
 ```{R}
-
+?which
 ```
 
 Here's another odd one
@@ -309,7 +310,7 @@ What will sum( c(1,2,3,3,4)>2.1)  give us?
 Predict the value, then try it
 
 ```{R}
-
+sum( c(1,2,3,3,4)>2.1)
 ```
 
 #Sorting and ordering

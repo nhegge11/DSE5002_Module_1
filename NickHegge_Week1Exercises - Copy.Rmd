@@ -12,6 +12,7 @@ Assign 10 to the variable x. Assign 5 to the variable y. Assign 20 to the variab
 
 ```{r ex1}
 
+#Assign values to variables
 x <- 10
 y <- 5
 z <- 20
@@ -26,8 +27,9 @@ Show that x is less than z but greater than y.
 
 ```{r ex2}
 
-answer_ex2 <- x < z & x > y
-answer_ex2
+#Single boolean expression to check if x is less than z and greater than y
+result_ex2 <- x < z & x > y
+result_ex2
 
 ```
 
@@ -38,8 +40,9 @@ Show that x and y do not equal z.
 
 ```{r ex3}
 
-answer_ex3 <- x != z & y != z
-answer_ex3
+#Single boolean expression to check if x and y do not equal z
+result_ex3 <- x != z & y != z
+result_ex3
 
 ```
 
@@ -51,8 +54,9 @@ Show that the formula `x + 2y = z`.
 
 ```{r ex4}
 
-answer_ex4 <- (x + 2 * y) == z
-answer_ex4
+#Check if x + 2y equals z in a single boolean expression
+result_ex4 <- (x + 2 * y) == z
+result_ex4
 
 ```
 
@@ -63,10 +67,10 @@ I have created a vector (test_vector) of integers for you. Determine if any of x
 
 
 ```{r ex5}
-
+#Check if x, y, or z are in the test_vector
 test_vector <- c(1, 5, 11:22)
-answer_ex5 <- x %in% test_vector | y %in% test_vector | z %in% test_vector
-answer_ex5
+result_ex5 <- x %in% test_vector | y %in% test_vector | z %in% test_vector
+result_ex5
 ```
 
 # Exercise 6
@@ -75,10 +79,12 @@ Show which value is contained in the test vector. To do this you will need to cr
 
 ```{r ex6}
 
+#Find which values (x, y, or z) are contained in the test_vector and their indices
 matches_x <- which(test_vector == x)
 matches_y <- which(test_vector == y)
 matches_z <- which(test_vector == z)
 
+#Combine all matching indices into a single vector
 all_matches <- c(matches_x, matches_y, matches_z)
 all_matches
 
